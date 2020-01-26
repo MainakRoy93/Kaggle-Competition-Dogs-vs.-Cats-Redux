@@ -23,8 +23,8 @@ All hidden layers are equipped with the rectification (ReLU) non-linearity.
 ## ResNet50
 ResNet-50 is a pretrained Deep Learning model for image classification of the Convolutional Neural Network(CNN, or ConvNet), which is a class of deep neural networks, most commonly applied to analyzing visual imagery. ResNet-50 is 50 layers deep and is trained on a million images of 1000 categories from the ImageNet database.
 
-### Resnet50 
+### Resnet50 Architecture
+![Resnet Arch](https://github.com/MainakRoy93/Kaggle-Competition-Dogs-vs.-Cats-Redux/blob/master/Images/resnet50.JPG?raw=true "Optional Title")
 ResNet stands for Residual Network and more specifically it is of a Residual Neural Network architecture. What characterizes a residual network is its identity connections. Identity connections takes the input directly to the end of each residual block, as shown below with the curved arrow:
-
 
 Specifically, the ResNet-50 model consists of 5 stages each with a residual block. Each residual block has 3 layers with both 1*1 and 3*3 convolutions. The concept of residual blocks is quite simple. In traditional neural networks, each layer feeds into the next layer. In a network with residual blocks, each layer feeds into the next layer and directly into the layers about 2–3 hops away, called identity connections.
