@@ -31,7 +31,8 @@ Specifically, the ResNet-50 model consists of 5 stages each with a residual bloc
 
 ## Training Approaches
 ### Training only the fully connected layer
-This is by far the fastest approach, where only the last fully connceted layers are trained as per our requirement, while all the other parameters are used as defined in the pre-trained model. Below us the performance of VGG16 when this approach is used
+This is by far the fastest approach, where only the last fully connceted layers are trained as per our requirement, while all the other parameters are used as defined in the pre-trained model. Below is the performance of VGG16 when this approach is used.
+
 ![IMage](https://github.com/MainakRoy93/Kaggle-Competition-Dogs-vs.-Cats-Redux/blob/master/Images/2020-01-26_12h37_00.png?raw=true "Optional Title")
 
 
