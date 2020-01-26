@@ -28,3 +28,10 @@ ResNet-50 is a pretrained Deep Learning model for image classification of the Co
 ResNet stands for Residual Network and more specifically it is of a Residual Neural Network architecture. What characterizes a residual network is its identity connections. Identity connections takes the input directly to the end of each residual block, as shown below with the curved arrow:
 
 Specifically, the ResNet-50 model consists of 5 stages each with a residual block. Each residual block has 3 layers with both 1x1 and 3x3 convolutions. The concept of residual blocks is quite simple. In traditional neural networks, each layer feeds into the next layer. In a network with residual blocks, each layer feeds into the next layer and directly into the layers about 2–3 hops away, called identity connections.
+
+## Training Approaches
+### Training only the fully connected layer
+This is by far the fastest approach, where only the last fully connceted layers are trained as per our requirement, while all the other parameters are used as defined in the pre-trained model. Below us the performance of VGG16 when this approach is used
+![IMage](https://github.com/MainakRoy93/Kaggle-Competition-Dogs-vs.-Cats-Redux/blob/master/Images/2020-01-26_12h37_00.png?raw=true "Optional Title")
+
+
