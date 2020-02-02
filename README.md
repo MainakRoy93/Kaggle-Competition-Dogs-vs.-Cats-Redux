@@ -35,4 +35,15 @@ This is by far the fastest approach, where only the last fully connceted layers 
 
 ![IMage](https://github.com/MainakRoy93/Kaggle-Competition-Dogs-vs.-Cats-Redux/blob/master/Images/2020-01-26_12h37_00.png?raw=true "Optional Title")
 
+### Training the last 4 convolutional layers and the fully connected layer.
+The higher layers of a CNN usually learn specific features of the dataset that it's being trained on. By re-training the last 4 layers of the VGG16 model, I try to re-train the higher level features which are specific to the dataset that im using. Hopefully, by learning dataset specific features, we may get better performance.
+![Image2](https://github.com/MainakRoy93/Kaggle-Competition-Dogs-vs.-Cats-Redux/blob/master/Images/2020-02-02_15h26_45.png?raw=true "Optional Title")
+
+![Image3](https://github.com/MainakRoy93/Kaggle-Competition-Dogs-vs.-Cats-Redux/blob/master/Images/2020-02-02_15h37_06.png?raw=true "Optional Title")
+
+### Using Keras's Image Data Generator
+Keras's Image Data Generator, generate batches of tensor image data with real-time data augmentation. This has a regularization effect on the training process. Using slightly rotated images (or any other type of image augmentation), we can expect the model to correctly classify test set images which may not be perfectly similar to training images.
+
+
+
 
